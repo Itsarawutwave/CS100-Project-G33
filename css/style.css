@@ -12,6 +12,13 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background: #e8eff7;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
 }
 .grid-row {
   display: grid;
