@@ -64,7 +64,11 @@ const config = {
     validateStudentID();
     validateEmail();
   }
-  
+  // Functuin to check activitiesDay
+  function activitiesDay(){
+    const activities = document.getElementById("workTitle");
+  }
+
   // Function to fetch activity types from the backend
   async function fetchActivityTypes() {
     try {
