@@ -1300,8 +1300,6 @@ section, header {
   margin-top: 20px;
 }
 
-
-
 @media screen and (max-width:768px) {
   header.position-absolute {
     background: #fff none repeat scroll 0 0;
