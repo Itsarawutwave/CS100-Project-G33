@@ -1299,6 +1299,10 @@ section, header {
   display: inline-block;
   margin-top: 20px;
 }
+.wave{
+  left: 20px;
+  height: 400px;
+}
 
 @media screen and (max-width:768px) {
   header.position-absolute {

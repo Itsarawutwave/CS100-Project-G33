@@ -12,13 +12,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>Forms - CSTU Passport</title>
+  <title>Our Activities</title>
   <link rel="stylesheet" href="../css/Our-activities.css">
 </head>
 <body>
   <!-- Form Container -->
   <div class="form-container">
-    <h1>Our CSTU Passport</h1>
+    <h1>Our Activities</h1>
     <!-- Main Form -->
     <form id="myForm" action="#" method="post">
       <!-- Firstname and Lastname Field -->
@@ -48,7 +48,12 @@
       <!-- Work/Activity Title Field -->
       <div class="form-group">
         <label for="workTitle">Work/Activity Title</label>
-        <input type="text" id="workTitle" name="workTitle" />
+        <select name="workTitle" id="workTitle">
+          <option value=""disabled selected>Select an option</option>
+          <option value="orentationDay">วันปฐมนิเทศ</option>
+          <option value="firstmeetDay">First Meet</option>
+          <option value="freshygameDay">Freshy Games</option>
+        </select>
       </div>
 
       <!-- Type of Work/Activity Field -->
