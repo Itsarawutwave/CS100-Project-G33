@@ -1,9 +1,4 @@
-/*
- * Responsee CSS - v6 - 2019-06-22
- * https://www.myresponsee.com
- * Copyright 2019, Vision Design - graphic zoo
- * Free to use under the MIT license.
-*/
+
 * {  
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -107,7 +102,7 @@ dl dd:last-child {margin-bottom:0;}
 abbr {cursor:help;}
 abbr[title] {border-bottom:1px dotted;}
 kbd {
-  background: #152732 none repeat scroll 0 0;
+  background: #2f2f2f none repeat scroll 0 0;
   color: #fff;
   padding: 0.125rem 0.3125rem;
 }
@@ -133,11 +128,7 @@ mark {
 
 .size-960.align-content-left .line,.size-1140.align-content-left .line,.size-1280.align-content-left .line,.size-1520.align-content-left .line {margin-left:0;}
 form {line-height:1.4;}
-nav {
-  display:block;
-  width:100%;
-  background:#152732;
-}
+
 .line::after, nav::after, .center::after, .box::after, .margin::after, .margin2x::after, .grid.full::after {
   clear:both;
   content: ".";
@@ -227,9 +218,9 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.7rem;
   margin:0 0.625rem;
 }
-.top-nav .active-item a {background:#2b4c61;}
+.top-nav .active-item a {background:#414242;}
 .aside-nav > ul > li.active-item > a:link,.aside-nav > ul > li.active-item > a:visited {
-  background:#2b4c61;
+  background:#555555;
   color:#fff;
 }
 @media screen and (min-width:769px) {

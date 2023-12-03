@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางตามแนวตั้ง */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 576px) {
+    
+    li {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (min-width: 577px) {
+    li {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    li {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
