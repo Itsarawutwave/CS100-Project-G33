@@ -64,9 +64,45 @@ const config = {
     validateStudentID();
     validateEmail();
   }
-  // Functuin to check activitiesDay
+  // Functuin to activitiesDay
   function activitiesDay(){
     const activities = document.getElementById("workTitle");
+    const activitiesTitle = document.getElementById("activitiesTitle");
+    const activitiesImg1 = document.getElementById("activitiesImg1");
+    const activitiesImg2 = document.getElementById("activitiesImg2");
+    const activitiesImg3 = document.getElementById("activitiesImg3");
+    const activitiesImg4 = document.getElementById("activitiesImg4");
+    //Display activities day
+   switch(activities.value){
+    case "orentationDay":
+      activitiesTitle.innerHTML = "วันปฐมนิเทศ";
+      activitiesImg1.src = "../img/orentationDay_1.png"
+      activitiesImg2.src = "../img/orentationDay_2.png"
+      activitiesImg3.src = "../img/orentationDay_3.png"
+      activitiesImg4.src = "../img/orentationDay_4.png"
+      break;
+    case "firstmeetDay":
+      activitiesTitle.innerHTML = "First Meet";
+      activitiesImg1.src = "../img/firstmeetDay_1.png"
+      activitiesImg2.src = "../img/firstmeetDay_2.png"
+      activitiesImg3.src = "../img/firstmeetDay_3.png"
+      activitiesImg4.src = "../img/firstmeetDay_4.png"
+      break;
+    case "freshygameDay":
+      activitiesTitle.innerHTML = "Freshy Games";
+      activitiesImg1.src = "../img/freshygameDay_1.png"
+      activitiesImg2.src = "../img/freshygameDay_2.png"
+      activitiesImg3.src = "../img/freshygameDay_3.png"
+      activitiesImg4.src = "../img/freshygameDay_4.png"
+      break;
+    case "halloweenDay":
+      activitiesTitle.innerHTML = "Halloween Nightmare";
+      activitiesImg1.src = "../img/halloweenDay_1.png"
+      activitiesImg2.src = "../img/halloweenDay_2.png"
+      activitiesImg3.src = "../img/halloweenDay_3.png"
+      activitiesImg4.src = "../img/halloweenDay_4.png"
+      break;
+   }
   }
 
   // Function to fetch activity types from the backend

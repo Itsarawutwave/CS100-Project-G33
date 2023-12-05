@@ -48,7 +48,7 @@
       <!-- Work/Activity Title Field -->
       <div class="form-group">
         <label for="workTitle">Work/Activity Title</label>
-        <select name="workTitle" id="workTitle">
+        <select name="workTitle" id="workTitle" onchange="activitiesDay()">
           <option value=""disabled selected>Select an option</option>
           <option value="orentationDay">วันปฐมนิเทศ</option>
           <option value="firstmeetDay">First Meet</option>
@@ -130,7 +130,13 @@
       </div>
     </form>
   </div>
-
+  <div id="output">
+      <h1 id="activitiesTitle"></h1>
+      <img id="activitiesImg1" src="">
+      <img id="activitiesImg2" src="">
+      <img id="activitiesImg3" src="">
+      <img id="activitiesImg4" src="">
+    </div>
   <!-- JavaScript -->
   <script src="../JS/script.js"></script>
 </body>
