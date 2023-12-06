@@ -93,11 +93,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
-}
-.output img{
-  width:560px;
-  margin: 10px;
-  border-radius: 20px;
 }
