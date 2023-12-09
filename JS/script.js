@@ -29,11 +29,11 @@ function validateName() {
 // Function to validate Student ID
 function validateStudentID() {
   const studentIDInput = document.getElementById("studentID");
-  const studentIDPattern = /^\d{10}$/;
+  const studentIDPattern = /^66\d{10}$/;
   const errorElement = document.getElementById("studentIDError");
 
   if (!studentIDPattern.test(studentIDInput.value)) {
-    errorElement.textContent = "Please enter a 10-digit Student ID.";
+    errorElement.textContent = "Please enter a 10-digit Student ID in the format '66XXXXXXXX'.";
     return false;
   } else {
     errorElement.textContent = ""; // Clear the error message when valid
@@ -174,7 +174,7 @@ function output(){
   const firstname = fullname.value.trim().split(" ")[0];
   const lastname = fullname.value.trim().split(" ")[1];
   const student_id = document.getElementById("studentID").value;
-  const  email = document.getElementById("email").value;
+  const email = document.getElementById("email").value;
   const worktype = document.getElementById("activityType").value;
   const academicyear = document.getElementById("academicYear").value;
   const worktitle = document.getElementById("workTitle").value;
@@ -202,6 +202,7 @@ function output(){
 // Event listener for form submission
 document.getElementById("myForm").addEventListener("submit", submitForm);
 document.getElementById("myForm").addEventListener("submit", output);
+
 // Event listeners for input validation on user input
 document.getElementById("fullname").addEventListener("input", validateName);
 document.getElementById("studentID").addEventListener("input", validateStudentID);
