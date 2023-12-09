@@ -6,7 +6,7 @@ body {
   
   nav {
     background-color: #333;
-    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางตามแนวตั้ง */
+    align-items: center;
   }
   
   ul {
