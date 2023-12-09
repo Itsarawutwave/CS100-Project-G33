@@ -108,7 +108,34 @@ body {
   margin-bottom: 10px;
 }
 
-/* Styling for the output text */
 .output p {
-  margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างข้อความใน output */
+  margin-bottom: 10px; 
+}
+
+.output {
+  display: flex; 
+  flex-direction: column; 
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.output p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .output {
+      width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .output {
+      width: 40%;
+  }
 }
