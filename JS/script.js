@@ -29,7 +29,7 @@ function validateName() {
 // Function to validate Student ID
 function validateStudentID() {
   const studentIDInput = document.getElementById("studentID");
-  const studentIDPattern = /^66\d{10}$/;
+  const studentIDPattern = /^66\d{8}$/;
   const errorElement = document.getElementById("studentIDError");
 
   if (!studentIDPattern.test(studentIDInput.value)) {
@@ -57,11 +57,27 @@ function validateEmail() {
   return true;
 }
 
+//Function to validate Worktitle
+function validateWorkTitle(){
+  const WorkTitleInput = document.getElementById("workTitle");
+  const Worktitle = WorkTitleInput.value;
+  const errorElement = document.getElementById("worktitleError");
+  
+  if(!Worktitle){
+    errorElement.textContent = "Please enter your Activity Title.";
+    return false;
+  } else {
+    errorElement.textContent = "";//Clear the error message when valid
+  }
+  return true;
+}
+
 // Function to validate form inputs on user input
 function validateFormOnInput() {
   validateName();
   validateStudentID();
   validateEmail();
+  validateWorkTitle();
 }
 
 // Function to fetch activity types from the backend
@@ -105,7 +121,7 @@ async function submitForm(event) {
   event.preventDefault();
 
   // Validate form inputs before submission
-  if (!validateName() || !validateStudentID() || !validateEmail()) {
+  if (!validateName() || !validateStudentID() || !validateEmail() || !validateWorkTitle()) {
     return;
   }
 
@@ -118,7 +134,7 @@ async function submitForm(event) {
     alert("End datetime should be after the start datetime.");
     return;
   }
-
+  output();
   // Create the data object to send to the backend
   const formData = new FormData(event.target);
   const data = {
@@ -156,7 +172,6 @@ async function submitForm(event) {
 
       // Display success message with formatted data
       alert(responseData.message + "\n" + formattedData);
-      output();
 
       document.getElementById("myForm").reset();
     } else {
@@ -201,9 +216,9 @@ function output(){
 }
 // Event listener for form submission
 document.getElementById("myForm").addEventListener("submit", submitForm);
-document.getElementById("myForm").addEventListener("submit", output);
 
 // Event listeners for input validation on user input
 document.getElementById("fullname").addEventListener("input", validateName);
 document.getElementById("studentID").addEventListener("input", validateStudentID);
 document.getElementById("email").addEventListener("input", validateEmail);
+document.getElementById("workTitle").addEventListener("input", validateWorkTitle);
