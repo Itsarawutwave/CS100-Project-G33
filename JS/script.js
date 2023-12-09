@@ -135,7 +135,6 @@ async function submitForm(event) {
     location: formData.get("location"),
     description: formData.get("description")
   };
-
   console.log(data);
 
   try {
@@ -153,9 +152,7 @@ async function submitForm(event) {
       console.log("Form data submitted successfully!");
 
       // Format JSON data for display
-      const formattedData = Object.entries(responseData.data)
-        .map(([key, value]) => `"${key}": "${value}"`)
-        .join("\n");
+      const formattedData = Object.entries(responseData.data).map(([key, value]) => `"${key}": "${value}"`).join("\n");
 
       // Display success message with formatted data
       alert(responseData.message + "\n" + formattedData);
@@ -171,13 +168,41 @@ async function submitForm(event) {
     console.error("An error occurred while submitting form data:", error);
   }
 }
+function output(){
+  const fullname = document.getElementById("fullname");
+  const firstname = fullname.value.trim().split(" ")[0];
+  const lastname = fullname.value.trim().split(" ")[1];
+  const student_id = document.getElementById("studentID").value;
+  const  email = document.getElementById("email").value;
+  const worktype = document.getElementById("activityType").value;
+  const academicyear = document.getElementById("academicYear").value;
+  const worktitle = document.getElementById("workTitle").value;
+  const Semester = document.getElementById("semester").value;
+  const startdate = document.getElementById("startDate").value;
+  const enddate = document.getElementById("endDate").value;
+  const Location = document.getElementById("location").value;
+  const comment = document.getElementById("description").value;
 
+  document.getElementById("firstname").innerHTML = "Firstname : " + firstname;
+  document.getElementById("lastname").innerHTML = "Lastname : " + lastname;
+  document.getElementById("activitiesTitle").innerHTML = worktitle;
+  document.getElementById("uni-email").innerHTML = "Email : " + email;
+  document.getElementById("worktitle").innerHTML = "Activity Title : " + worktitle;
+  document.getElementById("studentid").innerHTML = "Student ID : " + student_id;
+  document.getElementById("worktype").innerHTML = "Acticity Type : " + worktype;
+  document.getElementById("academic-year").innerHTML = "Academic Year : " + academicyear;
+  document.getElementById("Semester").innerHTML = "Semester : " + Semester;
+  document.getElementById("startdate").innerHTML = "Start Date : " + startdate;
+  document.getElementById("enddate").innerHTML = "End Date : " + enddate;
+  document.getElementById("Location").innerHTML = "Location : " + Location;
+  document.getElementById("comment").innerHTML = "Comment : " + comment;
+
+}
 // Event listener for form submission
 document.getElementById("myForm").addEventListener("submit", submitForm);
+document.getElementById("btn").addEventListener("click", output);
 
 // Event listeners for input validation on user input
 document.getElementById("fullname").addEventListener("input", validateName);
-document
-  .getElementById("studentID")
-  .addEventListener("input", validateStudentID);
+document.getElementById("studentID").addEventListener("input", validateStudentID);
 document.getElementById("email").addEventListener("input", validateEmail);
