@@ -184,6 +184,8 @@ async function submitForm(event) {
     console.error("An error occurred while submitting form data:", error);
   }
 }
+
+// Function to output data
 function output(){
   const fullname = document.getElementById("fullname");
   const firstname = fullname.value.trim().split(" ")[0];
@@ -214,8 +216,21 @@ function output(){
   document.getElementById("comment").innerHTML = "<span style='color: red;font-weight: bold'>Comment : </span>" + comment;
 
 }
+
+//Function mousehover-in
+function mousehover(){
+  this.style.backgroundColor = '#bdba34';
+}
+
+//Function mousehover-out
+function mousehover_out() {
+  this.style.backgroundColor = '#4caf50';
+}
 // Event listener for form submission
 document.getElementById("myForm").addEventListener("submit", submitForm);
+document.getElementById("submit_btn").addEventListener("mouseover",mousehover);
+document.getElementById("submit_btn").addEventListener("mouseout",mousehover_out);
+
 
 // Event listeners for input validation on user input
 document.getElementById("fullname").addEventListener("input", validateName);
