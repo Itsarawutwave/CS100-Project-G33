@@ -201,19 +201,19 @@ function output(){
   const Location = document.getElementById("location").value;
   const comment = document.getElementById("description").value;
 
-  document.getElementById("firstname").innerHTML = "<span style='color: red;font-weight: bold'>Firstname : </span>" + firstname;
-  document.getElementById("lastname").innerHTML = "<span style='color: red;font-weight: bold'>Lastname : </span>" + lastname;
+  document.getElementById("firstname").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Firstname : </span>" + firstname;
+  document.getElementById("lastname").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Lastname : </span>" + lastname;
   document.getElementById("activitiesTitle").innerHTML = worktitle;
-  document.getElementById("uni-email").innerHTML = "<span style='color: red;font-weight: bold'>Email : </span>" + email;
-  document.getElementById("worktitle").innerHTML = "<span style='color: red;font-weight: bold'>Activity Title : </span>" + worktitle;
-  document.getElementById("studentid").innerHTML = "<span style='color: red;font-weight: bold'>Student ID : </span>" + student_id;
-  document.getElementById("worktype").innerHTML = "<span style='color: red;font-weight: bold'>Activity Type : </span>" + worktype;
-  document.getElementById("academic-year").innerHTML = "<span style='color: red;font-weight: bold'>Academic Year : </span>" + academicyear;
-  document.getElementById("Semester").innerHTML = "<span style='color: red;font-weight: bold'>Semester : </span>" + Semester;
-  document.getElementById("startdate").innerHTML = "<span style='color: red;font-weight: bold'>Start-Date : </span>" + startdate;
-  document.getElementById("enddate").innerHTML = "<span style='color: red;font-weight: bold'>End-Date : </span>" + enddate;
-  document.getElementById("Location").innerHTML = "<span style='color: red;font-weight: bold'>Location : </span>" + Location;
-  document.getElementById("comment").innerHTML = "<span style='color: red;font-weight: bold'>Comment : </span>" + comment;
+  document.getElementById("uni-email").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Email : </span>" + email;
+  document.getElementById("worktitle").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Activity Title : </span>" + worktitle;
+  document.getElementById("studentid").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Student ID : </span>" + student_id;
+  document.getElementById("worktype").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Activity Type : </span>" + worktype;
+  document.getElementById("academic-year").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Academic Year : </span>" + academicyear;
+  document.getElementById("Semester").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Semester : </span>" + Semester;
+  document.getElementById("startdate").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Start-Date : </span>" + startdate;
+  document.getElementById("enddate").innerHTML = "<span style='color: #b4f766;font-weight: bold'>End-Date : </span>" + enddate;
+  document.getElementById("Location").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Location : </span>" + Location;
+  document.getElementById("comment").innerHTML = "<span style='color: #b4f766;font-weight: bold'>Comment : </span>" + comment;
 
 }
 

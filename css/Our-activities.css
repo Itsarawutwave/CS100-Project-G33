@@ -102,14 +102,22 @@ body {
   border: 1px solid #a4a4a4; 
   padding: auto; 
   margin-top: 10px; 
-  width: 40%;
+  width: 60%;
   margin-left: auto; 
   margin-right: auto;
   margin-bottom: 10px;
 }
 
+.output h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+}
+
 .output p {
-  margin-bottom: 10px; 
+  color: white;
+  font-size: 20px;
+  margin-bottom: 13px; 
 }
 
 .output {
@@ -122,10 +130,6 @@ body {
   margin-left: auto; 
   margin-right: auto;
   margin-bottom: 20px;
-}
-
-.output p {
-  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 576px) {
