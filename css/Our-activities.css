@@ -9,6 +9,7 @@
 /* Set the font family for the entire body */
 body {
     font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
   }
   
   /* Styling for the form container */
@@ -130,6 +131,24 @@ body {
   margin-left: auto; 
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+#darkModeToggle {
+  background-color: #4d4d4d;
+  border: solid 2px white;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#darkModeToggle:hover {
+  background-color: #8d8d8d;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 @media screen and (max-width: 576px) {

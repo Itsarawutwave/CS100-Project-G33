@@ -226,6 +226,17 @@ function mousehover(){
 function mousehover_out() {
   this.style.backgroundColor = '#4caf50';
 }
+
+//Darkmode
+document.addEventListener('DOMContentLoaded', function () {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  darkModeToggle.addEventListener('click', function () {
+      body.classList.toggle('dark-mode');
+  });
+});
+
 // Event listener for form submission
 document.getElementById("myForm").addEventListener("submit", submitForm);
 document.getElementById("submit_btn").addEventListener("mouseover",mousehover);
