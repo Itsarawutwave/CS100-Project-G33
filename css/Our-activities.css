@@ -150,6 +150,9 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+.dark-mode p,#activitiesTitle{
+  color:black;
+}
 
 @media screen and (max-width: 576px) {
   .output {

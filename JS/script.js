@@ -170,15 +170,10 @@ async function submitForm(event) {
       // Format JSON data for display
       const formattedData = Object.entries(responseData.data).map(([key, value]) => `"${key}": "${value}"`).join("\n");
 
-      // Display success message with formatted data
-      alert(responseData.message + "\n" + formattedData);
-
       document.getElementById("myForm").reset();
     } else {
       console.error("Failed to submit form data.");
 
-      // Display error message
-      alert("Failed to submit form data. Please try again.");
     }
   } catch (error) {
     console.error("An error occurred while submitting form data:", error);
